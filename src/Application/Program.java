@@ -76,9 +76,9 @@ public class Program {
 
 		System.out.print("Deseja retirar mais algum item do estoque (s/n)? ");
 		char r = sc.next().charAt(0);
-		do {
-			if (r == 's' || r == 'S') {
+		if (r == 's' || r == 'S') {
 
+			do {
 				System.out.print("Qual item deseja retirar do estoque? ");
 				sc.nextLine();
 				String name5 = sc.nextLine();
@@ -99,10 +99,11 @@ public class Program {
 					}
 				}
 
-			}
-			System.out.print("Deseja retirar mais algum item do estoque (s/n)? ");
-			r2 = sc.next().charAt(0);
-		} while (r2 != 'n');
+				System.out.print("Deseja retirar mais algum item do estoque (s/n)? ");
+				r2 = sc.next().charAt(0);
+			} while (r2 != 'n');
+
+		}
 
 		System.out.println();
 		char resp2;
